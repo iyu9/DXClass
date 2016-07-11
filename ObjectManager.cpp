@@ -28,7 +28,7 @@ public:
 class ObjectManager {
 private:
 	int count;
-	Object* objectList[100];
+	Object* objectPool[100];
 
 public:
 
@@ -37,8 +37,8 @@ public:
 	}
 
 	void add_object(Object &obj) {
-		objectList[count] = new Object();
-		objectList[count] = &obj;
+		objectPool[count] = new Object();
+		objectPool[count] = &obj;
 		count++;
 	}
 

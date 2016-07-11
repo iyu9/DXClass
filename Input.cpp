@@ -10,7 +10,7 @@ class Input {
 private:
 	LPDIRECTINPUT8 m_pDInput = nullptr;
 	LPDIRECTINPUTDEVICE8 m_pDIDevice = nullptr;
-
+	
 public:
 	HRESULT Init(HWND hWnd) 
 	{
